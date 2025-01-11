@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: "Fira Code", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    background-color: burlywood;
+}
+
+.sidebar h1 {}
+
+.sidebar_item {}
+
+/*side bar element*/
+.data-main {
+    margin-left: 50px;
+    transition: .3s;
+}
+
+
+/*signup style*/
+.forms {
+
+    color: white;
+}
+
+.main {
+    height: 100vh;
+    background-image: url(WhatsApp\ Image\ 2025-01-10\ at\ 10.24.17\ AM.jpeg);
+    background-size: cover;
+    /* Ensures the image covers the entire element */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    height: 100vh;
+    /* Set the height of the element */
+    width: 100%;
+}
+
+.cont {
+    border: 0px solid black;
+    backdrop-filter: blur(10em)
+}
+
+
+
+.head-text {
+
+    color: #000000;
+    padding: 20px;
+}
+
+.head-text .large {
+    font-size: 5em;
+    font-weight: 800;
+
+
+}
+
+.head-text .medium {
+    font-size: 2em;
+    font-weight: 200;
+
+}
+
+.head-text .smail {
+    font-size: 1em;
+    font-weight: 200;
+
+}
+
+.button {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    outline: 0;
+    background-color: var(--border-after-color);
+    color: #fff;
+}
+
+p a {
+    border: 0px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: #fff;
+}
+
+.button:focus {
+    border: 0;
+}
+
+/* From Uiverse.io by satyamchaudharydev */
+.form {
+    --width-of-input: 100%;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+}
+
+/* styling of Input */
+.input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+/* styling of animated border */
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+/* Hover on Input */
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* here is code of animated border */
+input:focus~.input-border {
+    width: 100%;
+}
+
+/* === if you want to do animated border on typing === */
+/* remove input:focus code and uncomment below code */
+input:valid~.input-border {
+    width: 100%;
+}
+
+input::placeholder {
+    color: #cccaca;
+    /* Replace with your desired color */
+    opacity: 1;
+    /* Optional: set opacity to 1 to ensure visibility */
+}
+
+/*image*/
+#undraw {
+    display: none;
+}
+
+.image {
+
+    color: #fff;
+    position: relative;
+}
+
+.image .real-image {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
