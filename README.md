@@ -1,7 +1,7 @@
 # GeoAttendance App
 
 ## Purpose
-The GeoAttendance app is designed to help organizations track employee attendance based on geographic location. By leveraging GPS technology, this application allows users to check in and out of work, ensuring accurate attendance records and improving accountability.
+The GeoAttendance app is designed to help lecturers track student attendance based on geographic location. By leveraging GPS technology, this application allows users(students) to cmark attendance for a particular course, ensuring accurate attendance records and improving accountability.
 
 ## Features
 - User registration and authentication
@@ -26,4 +26,4 @@ The GeoAttendance app is designed to help organizations track employee attendanc
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/geoattendance-app.git
+   git clone https://github.com/BestXigbekele/codehub.git
